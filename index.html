@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор уникальных ключей</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="terms">
+        <input type="number" id="key-length" placeholder="Длина ключа">
+        <input type="number" id="keys-number" placeholder="Сколько нужно ключей?">
+    </div>
+    <ul class="check">
+        <li class="check__li">
+            <input type="checkbox" id="digits" class="user-symbols">
+            <label for="digits">0-9</label>
+        </li>
+        <li class="check__li">
+            <input type="checkbox" id="upper-case-latin" class="user-symbols">
+            <label for="upper-case-latin">A-Z</label>
+        </li>
+        <li class="check__li">
+            <input type="checkbox" id="lower-case-latin" class="user-symbols">
+            <label for="lower-case-latin">a-z</label>
+        </li>
+        <li class="check__li">
+            <input type="checkbox" id="upper-case-cyrillic" class="user-symbols">
+            <label for="upper-case-cyrillic">А-Я</label>
+        </li>
+        <li class="check__li">
+            <input type="checkbox" id="lower-case-cyrillic" class="user-symbols">
+            <label for="lower-case-cyrillic">а-я</label>
+        </li>
+    </ul>
+    <button id="generate">Генерировать</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
